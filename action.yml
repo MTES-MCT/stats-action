@@ -1,0 +1,22 @@
+name: "Checks stats page action"
+description: "Checks stats page from url"
+author: 'Tristan Robert'
+branding:
+  icon: 'activity'  
+  color: 'green'
+inputs:
+  url:
+    description: 'The url to checks stats page'
+    required: true
+  uri:
+    description: 'Uri for stats page'
+    default: 'stats'
+    required: false
+  output:
+    description: 'Filename for stats reports'
+    default: 'stats.json'
+    required: false
+runs:
+  using: 'node12'
+  main: 'dist/index.js'
+      
